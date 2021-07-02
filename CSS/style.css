@@ -6,6 +6,10 @@
     border-radius: 50%;
 }
 
+.day{
+    margin-left: 26rem;
+}
+
 .title-text{
     font-size: 100px;
     color: black;
