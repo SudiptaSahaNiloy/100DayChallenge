@@ -48,9 +48,11 @@ function clearDay(e) {
 
 // function to clear all the days
 function resetAll(e) {
-    localStorage.clear();
+    if(confirm("Are you sure?")){
+        localStorage.clear();
 
-    day_button.forEach(element => {
-        element.style.background = '';
-    });
+        day_button.forEach(element => {
+            element.style.background = '';
+        });
+    }
 }
