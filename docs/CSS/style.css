@@ -7,6 +7,7 @@ body {
 }
 
 /* Creating a single Day Button to toggle on/off */
+
 .button-day {
     border: 1px solid rgb(138, 136, 136);
     box-shadow: 2px 2px rgb(196, 194, 194);
@@ -19,18 +20,20 @@ body {
 }
 
 /* styling the button down to set the button position */
+
 .reset-btn {
     width: 100px;
     height: 50px;
 }
 
 /* styling for smart phones */
-@media only screen and (max-width: 425px) {
+
+@media only screen and (max-width: 768px) {
     .row {
         padding-left: 0.9rem;
         width: 100%;
     }
-    p{
+    p {
         font-size: medium;
     }
     .button-day {
@@ -46,22 +49,20 @@ body {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        margin-left: 6rem;
+        margin: 0% 40%;
         margin-bottom: 15px;
     }
 }
 
 /* styling for desktop */
-@media only screen and (min-width: 426px) {
-    body{
-        background: yellow;
-    }
+
+@media only screen and (min-width:768px) {
     .row {
         padding-left: 24rem;
         padding-right: 20rem;
         width: 100%;
     }
-    p{
+    p {
         font-size: larger;
         font-weight: 500;
     }
@@ -78,7 +79,7 @@ body {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        margin-left: 33rem;
         margin-bottom: 15px;
+        margin: 0% 40%;
     }
 }
