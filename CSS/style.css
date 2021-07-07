@@ -1,6 +1,12 @@
-.full-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background: #ccffcc;
 }
+
+/* Creating a single Day Button to toggle on/off */
 
 .button-day {
     border: 1px solid rgb(138, 136, 136);
@@ -8,21 +14,51 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    
 }
 
-.day{
-    margin-left: 26rem;
+.row {
+    padding-left: 27rem;
 }
 
-.title-text{
+.title-text {
     font-size: 100px;
     color: black;
     text-shadow: 10px 10px rgb(218, 207, 207);
 }
 
+/* styling the button down to set the button position */
+
 .reset-btn {
     width: 100px;
     height: 50px;
     margin-left: 55rem;
+}
+
+/* styling for smart phones */
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: yellow;
+    }
+    .row {
+        padding-left: 2rem;
+    }
+    .button-day {
+        border: 1px solid rgb(138, 136, 136);
+        box-shadow: 2px 2px rgb(196, 194, 194);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .title-text {
+        font-size: 60px;
+        color: black;
+        text-shadow: 10px 10px rgb(218, 207, 207);
+    }
+    /* styling the button down to set the button position */
+    .reset-btn {
+        width: 100px;
+        height: 50px;
+        margin-left: 5rem;
+    }
 }
